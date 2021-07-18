@@ -19,7 +19,7 @@ header {
   left: 0;
   right: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 #head-section {
   display: flex;
