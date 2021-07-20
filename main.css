@@ -66,6 +66,17 @@ header {
   font-size: 25px;
   cursor: pointer;
   display: none;
+  color: #6d80ac;
+}
+/* .checkWrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+} */
+.checkWrapper:hover input ~ .checkbtn {
+  background-color: #ccc;
 }
 #check {
   visibility: hidden;
