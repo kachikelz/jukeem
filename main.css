@@ -1,6 +1,7 @@
 :root {
   --primary-color: #013b74;
   --secondary-color: #ebc622;
+  --logo-color2: #b5b185;
 }
 .container {
   display: grid;
@@ -23,14 +24,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
 }
-#head-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  /* max-width: 1360px; */
-}
+
 #banner {
   margin-top: 2em;
   justify-content: center;
@@ -53,13 +50,26 @@ header {
 }
 #navList a {
   text-decoration: none;
+  text-transform: uppercase;
+}
+#navList a:hover {
+  color: var(--logo-color2);
+  transition: 0.5s ease;
 }
 #navList li {
   padding: 1em;
   color: #013b74;
   font-weight: bold;
 }
-
+.checkbtn {
+  /* color: #fff; */
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  visibility: hidden;
+}
 #wrapper {
   display: grid;
   gap: 4em;
@@ -93,7 +103,7 @@ header {
   font-size: 1.3em;
   background-color: white;
   padding: 1.5em;
-  text-align: center;
+  /* text-align: left; */
 }
 #contact-session ul {
   display: grid;
@@ -130,8 +140,6 @@ footer h3 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  header {
-  }
   #banner > img {
     width: 100%;
   }
@@ -167,7 +175,40 @@ footer h3 {
 /* @media only screen and (min-width: 768px) {...} */
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
+@media only screen and (max-width: 992px) {
+  header {
+    align-items: flex-start;
+  }
+  #navBar {
+    padding: 0 0.5em;
+    /* color: rgb(107, 41, 41);
+    background-color: rgb(21, 129, 129); */
+  }
+  #navList {
+    flex-direction: column;
+    /* color: rgb(107, 41, 41); */
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 5.7em;
+    left: -100%;
+    color: white;
+    background-color: #6d80ac;
+  }
+  #navList a {
+    color: white;
+    padding: 1em;
+  }
+  #check:checked #navList {
+    left: 0;
+  }
+  .checkbtn {
+    display: block;
+  }
+  /* #check {
+    display: block;
+  } */
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {}  */
