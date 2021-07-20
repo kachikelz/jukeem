@@ -75,9 +75,9 @@ header {
   height: 0;
   width: 0;
 } */
-.checkWrapper:hover input ~ .checkbtn {
+/* .checkWrapper:hover input ~ .checkbtn {
   background-color: #ccc;
-}
+} */
 #check {
   visibility: hidden;
   opacity: 0;
