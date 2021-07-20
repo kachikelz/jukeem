@@ -69,7 +69,7 @@ header {
 }
 #check {
   visibility: hidden;
-  outline: none;
+  opacity: 0;
 }
 #wrapper {
   display: grid;
@@ -78,6 +78,11 @@ header {
 }
 #offer {
   display: grid;
+}
+#demo:checked {
+  background-color: red;
+  outline: none;
+  opacity: 0;
 }
 #offer h1 {
   text-align: center;
