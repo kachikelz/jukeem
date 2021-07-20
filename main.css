@@ -200,7 +200,7 @@ footer h3 {
     padding: 1em;
   }
   #check:pressed {
-    color: rgb(236, 208, 208);
+    background-color: rgb(236, 208, 208);
   }
   #check:checked #navList {
     left: 0;
