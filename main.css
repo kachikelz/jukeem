@@ -199,6 +199,9 @@ footer h3 {
     color: white;
     padding: 1em;
   }
+  .checkbtn:focus {
+    color: rgb(236, 208, 208);
+  }
   #check:checked #navList {
     left: 0;
   }
