@@ -66,11 +66,9 @@ header {
   font-size: 25px;
   cursor: pointer;
   display: none;
-  margin-top: 1em;
 }
 #check {
-  display: none;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 #wrapper {
   display: grid;
