@@ -198,6 +198,7 @@ footer h3 {
   #navList a {
     color: white;
     padding: 1em;
+    text-align: left;
   }
   #check:checked #navList {
     left: 0;
