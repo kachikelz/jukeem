@@ -1,17 +1,22 @@
-main {
+#main-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2em;
-  max-width: 1360px;
-  margin: 15em auto 15em;
+  /* grid-template-columns: 1fr 1fr; */
+  /* gap: 2em;
+  max-width: 1360px;*/
+  margin: 5em auto 5em;
+}
+#about {
+  display: grid;
+  justify-content: space-between;
+  gap: 1em;
 }
 h2 {
-  padding: 0.5em;
-  font-size: 2em;
+  padding: 0.5rem;
+  font-size: 2rem;
   border-bottom: 1px solid rgba(95, 94, 94, 0.329);
   color: var(--primary-color);
 }
 p {
-  padding: 1em;
-  font-size: 1.2em;
+  padding: 1rem;
+  font-size: 1.2rem;
 }
